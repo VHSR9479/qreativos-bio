@@ -1,5 +1,9 @@
 ---
 import "../styles/global.css";
+
+const telefono = "573218812325";
+const mensaje = "Hola vi esto en Instagram y quiero información";
+const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 ---
 
 <html lang="es">
@@ -42,9 +46,9 @@ import "../styles/global.css";
 			<style>
 				/* Declaración de la fuente */
 				@font-face {
-				font-family: "ScienceGothic";
-				src: url("/fonts/ScienceGothic.woff2") format("woff2"),
-					url("/fonts/ScienceGothic.woff") format("woff");
+				font-family: "bank_gothic";
+				src: url("/fonts/bank_gothic_light_regular-webfont.woff2") format("woff2"),
+					url("/fonts/bank_gothic_light_regular-webfont.woff") format("woff");
 				font-weight: 100 900; /* rango variable */
 				font-stretch: 50% 100%; /* para wdth */
 				font-style: oblique -10deg 0deg; /* para slnt */
@@ -53,7 +57,7 @@ import "../styles/global.css";
 
 				/* Fuente global */
 				:root {
-				--font-primary: "ScienceGothic", Arial, sans-serif;
+				--font-primary: "bank_gothic", Arial, sans-serif;
 				}
 
 				body {
@@ -64,60 +68,76 @@ import "../styles/global.css";
 			</style>
 	</head>
 	<body class="max-w-full mx-auto min-h-dvh ">
-		<div class="relative bg-white mt-6 mx-auto rounded-lg shadow-lg max-w-container ">
+		<div class="relative bg-white mx-auto rounded-lg shadow-lg max-w-container ">
 			<div class="relative">
 				<div class="relative inset-0 flex items-center justify-center  ">
-					<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 517.17">
-						<defs>
-							<style>
-							.cls-1 {
-								fill: var(--bgcolor-qreativo);
-							}
-							</style>
-						</defs>
-						<g id="Capa_2-2" data-name="Capa 2">
-							<path class="cls-1" d="M0,0v304.69c0,56.79,46.04,102.83,102.83,102.83h176.24c41.73,0,79.26-25.59,94.28-64.52,25.91-67.15,91.06-114.79,167.35-114.79s141.44,47.64,167.35,114.79c15.02,38.93,52.55,64.52,94.28,64.52h168.29c103.83-1.61,109.01,109.65,109.01,109.65l.37-109.65V0H0Z"/>
-						</g>
-					</svg>
+					<img src="Banner.svg" >
 				</div>
 			</div>
 
-			<div class="relative inset-0 -mt-[135px]  flex items-center justify-center ">
-				<div class="w-33 h-33 rounded-full border-5 border-[var(--bgcolor-qreativo)]"></div>
+			<div class="avatar relative inset-0 flex items-center justify-center ">
+				<div class="avatar-circle w-33 h-33 rounded-full border-5 border-[var(--bgcolor-qreativo)]"></div>
 			</div>
+			<span class=" text-black text-md -mono my-4 px-3 py-  flex items-center justify-center cursor-crosshair z-10 ">
+					@construproyectosvm
+			</span>
 
-			<section class="flex gap-2  mt-4 justify-center">
+			<section class="relative inset-0 my-5 flex flex-col  items-center justify-center text-center">
+				<!-- <img src="/logo.svg" alt="Logo" class="w-28 mb-4" /> -->
+				<h1 class="text-2xl font-bold">CONSTRUPROYECTOS VM</h1>
+				<p class="text-gray-600">Te acompañamos a construir tus sueños</p>
+			</section>
 
-
-				<a class="bg-[var(--bgcolor-qreativo)] social-button animate-slide-up-fade animate-delay-100" href="https://github.com/midudev"
-					target="_blank" aria-label="Tik Tok" title="Ir a tiktok">
-					<svg width="28" height="28">
-					<use xlink:href="./public/sprite.svg#tiktok" />
+			<section class="flex gap-3  mt-4 justify-center">
+				<!-- Whatsapp -->
+				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-100" href={urlWhatsapp}
+					target="_blank" aria-label="Whatsapp" title="Ir a Whatsapp de @construproyectosvm">
+					<svg >
+					<use xlink:href="./public/img/svg/iconos/whatsapp.svg" />
 					</svg>
 				</a>
 
 				<!-- Instagram -->
-				<a class="social-button animate-slide-up-fade animate-delay-200 bg-[var(--bgcolor-qreativo)]"
-					href="https://instagram.com/midudev" target="_blank" aria-label="Instagram" title="Ir a Instagram de @midudev">
+				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-200 "
+					href="https://instagram.com/midudev" target="_blank" aria-label="Instagram" title="Ir a Instagram de @construproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="./public/sprite.svg#instagram" />
+					<use xlink:href="./public/img/svg/iconos/instagram.svg" />
 					</svg>
 				</a>
 
-				<!-- YouTube -->
-				<a class="bg-[var(--bgcolor-qreativo)] social-button animate-slide-up-fade animate-delay-300" href="https://youtube.com/midudev"
-					target="_blank" aria-label="YouTube" title="Ir a YouTube de @midudev">
+				<!-- Facebook -->
+				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-300" href="https://youtube.com/midudev"
+					target="_blank" aria-label="Facebook" title="Ir a Facebook de @Contruproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="./public/sprite.svg#whatsapp" />
+					<use xlink:href="./public/img/svg/iconos/facebook.svg" />
 					</svg>
-				</a>				
-				</section>
+				</a>		
+				
+				<!-- Tik Tok -->
+				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-300" href="https://youtube.com/midudev"
+					target="_blank" aria-label="Tik Tok" title="Ir a Tik Tok de @contruproyectosvm">
+					<svg width="28" height="28">
+					<use xlink:href="./public/img/svg/iconos/tik-tok.svg" />
+					</svg>
+				</a>	
+			</section>
 
-			<div class="relative inset-0 mt-10 flex flex-col  items-center justify-center text-center">
-				<!-- <img src="/logo.svg" alt="Logo" class="w-28 mb-4" /> -->
-				<h1 class="text-2xl font-bold">CONSTRUPROYECTOS VM</h1>
-				<p class="text-gray-600">Más que proyectos, construimos sueños</p>
-			</div>
+			<section id="Servicios">
+				<div class="group my-10 gap-4 flex flex-col justify-center items-center">
+					<div class="item-group">
+						<a href="" class="enlace-item"> Hablemos de tu proyecto</a>
+					</div>
+					<div class="item-group">
+						<a href="" class="enlace-item">Descubre nuestro catálogo</a>
+					</div>
+					<div class="item-group">
+						<a href="" class="enlace-item">Solicita tu cotización</a>
+					</div>
+					<div class="item-group">
+						<a href="" class="enlace-item">Visitanos aquí</a>
+					</div>
+				</div>
+			</section>	
 		</div>
 
   	</body>
