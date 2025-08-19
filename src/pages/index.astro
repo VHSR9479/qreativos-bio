@@ -1,9 +1,13 @@
 ---
 import "../styles/global.css";
+import { checkSocialReferrer } from "../script/checkSocialReferrer.js";
 
-const telefono = "573218812325";
-const mensaje = "Hola vi esto en Instagram y quiero información";
-const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+const mensajes = {
+  facebook: "Hola vi esto en Facebook y quiero información",
+  instagram: "Hola vi esto en Instagram y quiero información",
+  tiktok: "Hola vi esto en TikTok y quiero información",
+  default: "Hola, quiero información"
+};
 ---
 
 <html lang="es">
@@ -71,16 +75,21 @@ const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje
 		<div class="relative bg-white mx-auto rounded-lg shadow-lg max-w-container ">
 			<div class="relative">
 				<div class="relative inset-0 flex items-center justify-center  ">
-					<img src="Banner.svg" >
+					<img src="Banner.svg" alt="Banner de Construproyectos VM" />
 				</div>
 			</div>
 
 			<div class="avatar relative inset-0 flex items-center justify-center ">
-				<div class="avatar-circle w-33 h-33 rounded-full border-5 border-[var(--bgcolor-qreativo)]"></div>
+				<div class="avatar-circle w-33 h-33 rounded-full border-5 border-[var(--bgcolor-qreativo)]">
+					<img src="cp.svg" alt="Logo de Construproyectos VM" />
+				</div>
 			</div>
-			<span class=" text-black text-md -mono my-4 px-3 py-  flex items-center justify-center cursor-crosshair z-10 ">
+			<div class="text-center relative inset-0 flex items-center justify-center">
+				<span class=" text-black text-md-mono my-4 px-3 py- w-auto  items-center justify-center cursor-crosshair z-10  border var(--bgcolor-qreativo) rounded-full">
 					@construproyectosvm
-			</span>
+				</span>
+			</div>
+			
 
 			<section class="relative inset-0 my-5 flex flex-col  items-center justify-center text-center">
 				<!-- <img src="/logo.svg" alt="Logo" class="w-28 mb-4" /> -->
@@ -90,34 +99,33 @@ const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje
 
 			<section class="flex gap-3  mt-4 justify-center">
 				<!-- Whatsapp -->
-				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-100" href={urlWhatsapp}
-					target="_blank" aria-label="Whatsapp" title="Ir a Whatsapp de @construproyectosvm">
+				<a id="icon-whatsapp-link" class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-100" aria-label="Whatsapp" title="Ir a Whatsapp de @construproyectosvm">
 					<svg >
-					<use xlink:href="img/svg/iconos/whatsapp.svg" />
+					<use xlink:href="img/svg/iconos/instagram.svg" />
 					</svg>
 				</a>
 
 				<!-- Instagram -->
-				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-200 "
-					href="https://instagram.com/midudev" target="_blank" aria-label="Instagram" title="Ir a Instagram de @construproyectosvm">
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-200 "
+					href="https://www.instagram.com/construproyectosvm?igsh=aTEzZWI5OG82OWMw" target="_blank" aria-label="Instagram" title="Ir a Instagram de @construproyectosvm">
 					<svg width="28" height="28">
 					<use xlink:href="img/svg/iconos/instagram.svg" />
 					</svg>
 				</a>
 
 				<!-- Facebook -->
-				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-300" href="https://youtube.com/midudev"
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.facebook.com/share/1B3BdGAxFw/?mibextid=wwXIfr"
 					target="_blank" aria-label="Facebook" title="Ir a Facebook de @Contruproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="img/svg/iconos/facebook.svg" />
+					<use xlink:href="img/svg/iconos/instagram.svg" />
 					</svg>
 				</a>		
 				
 				<!-- Tik Tok -->
-				<a class="bg-[var(--bgcolor-iconos)] social-button animate-slide-up-fade animate-delay-300" href="https://youtube.com/midudev"
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.tiktok.com/@construproyectosvm?_t=ZS-8yzpW8r6I8l&_r=1"
 					target="_blank" aria-label="Tik Tok" title="Ir a Tik Tok de @contruproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="img/svg/iconos/tik-tok.svg" />
+					<use xlink:href="img/svg/iconos/instagram.svg" />
 					</svg>
 				</a>	
 			</section>
@@ -125,20 +133,60 @@ const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje
 			<section id="Servicios">
 				<div class="group my-10 gap-4 flex flex-col justify-center items-center">
 					<div class="item-group">
-						<a href="" class="enlace-item"> Hablemos de tu proyecto</a>
+						<a id="url-whatsapp" href="" class="enlace-item">Hablemos de tu proyecto</a>
 					</div>
+					
 					<div class="item-group">
 						<a href="" class="enlace-item">Descubre nuestro catálogo</a>
 					</div>
-					<div class="item-group">
-						<a href="" class="enlace-item">Solicita tu cotización</a>
-					</div>
-					<div class="item-group">
-						<a href="" class="enlace-item">Visitanos aquí</a>
+
+					<div  class="item-group">
+						<a id="url-mapa" href="" target="_blank"   class="enlace-item"  title="Ir a Google Maps de @construproyectosvm">Visitanos aquí</a>
 					</div>
 				</div>
 			</section>	
+			<footer>
+				<div class="text-center py-4">
+					<p class="text-sm text-[var(--bgcolor-gris)]">© 2025 Construproyectos. Todos los derechos reservados.</p>
+					<p class="text-sm text-[var(--bgcolor-gris)]">Diseño y desarrollo por <a href="https://qreativostudio.com" target="_blank" class="hover:underline">Qreativo Studio</a>.</p>
+				</div>
+			</footer>
 		</div>
 
+		<script>
+			const telefono = "573053012530";
+			const urlmap = `https://www.google.com/maps/place/construproyectosvm/@3.4639172,-76.5316519,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a754b41e10fd:0x4afb32685d4c7c0f!8m2!3d3.4639172!4d-76.5316519!16s%2Fg%2F11xsn611pr?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D`;
+			const mensajes = {
+				facebook: "Hola vi esto en Facebook y quiero información",
+				instagram: "Hola vi esto en Instagram y quiero información",
+				tiktok: "Hola vi esto en TikTok y quiero información",
+				default: "Hola, quiero información"
+			};
+
+			const ref = document.referrer.toLowerCase();
+			let mensaje = mensajes.default;
+
+			if (ref.includes("facebook.com")) {
+				mensaje = mensajes.facebook;
+			} else if (ref.includes("instagram.com")) {
+				mensaje = mensajes.instagram;
+			} else if (ref.includes("tiktok.com")) {
+				mensaje = mensajes.tiktok;
+			}
+
+			const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+			const whatsappLink = document.getElementById("icon-whatsapp-link");
+			if (whatsappLink) {
+				whatsappLink.setAttribute("href", urlWhatsapp);
+			}
+			const whatsappLink2 = document.getElementById("url-whatsapp");
+			if (whatsappLink2) {
+				whatsappLink2.setAttribute("href", urlWhatsapp);
+			}
+			const mapsLink = document.getElementById("url-mapa");
+			if (mapsLink) {
+				mapsLink.setAttribute("href", urlmap);
+			}
+			</script>
   	</body>
 </html>
