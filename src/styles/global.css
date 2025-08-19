@@ -24,6 +24,10 @@
   font-family: var(--font-secondary);
 }
 
+.font-bold{
+  font-family: var(--font-bold);
+}
+
 .item-group {
   @apply rounded-md;
   height: 60px;

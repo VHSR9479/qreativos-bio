@@ -69,10 +69,22 @@ const mensajes = {
 					font-style: oblique -10deg 0deg; /* para slnt */
 					font-display: swap; /* mejora el rendimiento */
 				}
+
+								  /* Fuente 2: bank_gothic  */
+				@font-face {
+					font-family: "Montserrat-Bold";
+					src: url("/fonts/Montserrat-Bold.ttf") format("ttf");
+					font-weight: 100 900; /* rango variable */
+					font-stretch: 50% 100%; /* para wdth */
+					font-style: oblique -10deg 0deg; /* para slnt */
+					font-display: swap; /* mejora el rendimiento */
+				}
 				/* Fuente global */
 				:root {
-				--font-primary: "montserrat", Arial, sans-serif;
+				--font-primary: "montserrat",Arial, sans-serif;
 				--font-secondary: "bank_gothic", Arial, sans-serif;
+				--font-bold: "Montserrat-Bold",Arial, sans-serif;
+				
 				}
 
 				body {
@@ -95,8 +107,8 @@ const mensajes = {
 					<img src="avatar.svg" alt="Logo de Construproyectos VM" />
 				</div>
 			</div>
-			<div class="text-center relative inset-0 flex items-center justify-center">
-				<span class=" text-black text-sm-mono my-4 px-3 py- w-auto  items-center justify-center cursor-crosshair z-10  border var(--bgcolor-qreativo) rounded-full">
+			<div class="text-center font-bold relative inset-0 flex items-center justify-center">
+				<span class=" text-black text-sm-mono  my-4 px-3 py- w-auto  items-center justify-center cursor-crosshair z-10  border var(--bgcolor-qreativo) rounded-full">
 					@construproyectosvm
 				</span>
 			</div>
@@ -104,7 +116,7 @@ const mensajes = {
 
 			<section class="relative inset-0 my-5 flex flex-col  items-center justify-center text-center">
 				<!-- <img src="/logo.svg" alt="Logo" class="w-28 mb-4" /> -->
-				<h1 class="font-title text-2xl font-bold">CONSTRUPROYECTOS VM</h1>
+				<h1 class="font-title text-2xl">CONSTRUPROYECTOS VM</h1>
 				<p class="text-gray-600">Te acompañamos a construir tus sueños</p>
 			</section>
 
@@ -158,8 +170,8 @@ const mensajes = {
 			</section>	
 			<footer>
 				<div class="text-center py-4">
-					<p class="text-sm text-[var(--bgcolor-gris)]">© 2025 Construproyectos. Todos los derechos reservados.</p>
-					<p class="text-sm text-[var(--bgcolor-gris)]">Diseño y desarrollo por <a href="https://qreativostudio.com" target="_blank" class="hover:underline">Qreativo Studio</a>.</p>
+					<p class="text-sm font-bold text-[var(--bgcolor-gris)]">© 2025 Construproyectos. Todos los derechos reservados.</p>
+					<p class="text-sm font-bold text-[var(--bgcolor-gris)]">Diseño y desarrollo por <a href="https://qreativostudio.com" target="_blank" class="hover:underline">Qreativo Studio</a>.</p>
 				</div>
 			</footer>
 		</div>
