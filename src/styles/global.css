@@ -20,6 +20,10 @@
   
 }
 
+.font-title{
+  font-family: var(--font-secondary);
+}
+
 .item-group {
   @apply rounded-md;
   height: 60px;

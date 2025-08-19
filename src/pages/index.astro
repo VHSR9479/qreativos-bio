@@ -50,24 +50,35 @@ const mensajes = {
 			<style>
 				/* Declaración de la fuente */
 				@font-face {
-				font-family: "bank_gothic";
-				src: url("/fonts/bank_gothic_light_regular-webfont.woff2") format("woff2"),
-					url("/fonts/bank_gothic_light_regular-webfont.woff") format("woff");
+				font-family: "montserrat";
+				src: url("/fonts/montserrat-regular.woff2") format("woff2"),
+					url("/fonts/montserrat-regular.woff") format("woff");
 				font-weight: 100 900; /* rango variable */
 				font-stretch: 50% 100%; /* para wdth */
 				font-style: oblique -10deg 0deg; /* para slnt */
 				font-display: swap; /* mejora el rendimiento */
 				}
 
+				  /* Fuente 2: bank_gothic  */
+				@font-face {
+					font-family: "bank_gothic";
+					src: url("/fonts/bank_gothic_light_regular-webfont.woff2") format("woff2"),
+						url("/fonts/bank_gothic_light_regular-webfont.woff") format("woff");
+					font-weight: 100 900; /* rango variable */
+					font-stretch: 50% 100%; /* para wdth */
+					font-style: oblique -10deg 0deg; /* para slnt */
+					font-display: swap; /* mejora el rendimiento */
+				}
 				/* Fuente global */
 				:root {
-				--font-primary: "bank_gothic", Arial, sans-serif;
+				--font-primary: "montserrat", Arial, sans-serif;
+				--font-secondary: "bank_gothic", Arial, sans-serif;
 				}
 
 				body {
-				font-family: var(--font-primary);
-				font-weight: 400;
-				margin: 0;
+					font-family: var(--font-primary);
+					font-weight: 400;
+					margin: 0;
 				}
 			</style>
 	</head>
@@ -80,12 +91,12 @@ const mensajes = {
 			</div>
 
 			<div class="avatar relative inset-0 flex items-center justify-center ">
-				<div class="avatar-circle w-33 h-33 rounded-full border-5 border-[var(--bgcolor-qreativo)]">
-					<img src="cp.svg" alt="Logo de Construproyectos VM" />
+				<div class="avatar-circle w-33 h-33 py-5 px-5 rounded-full border-5 border-[var(--bgcolor-qreativo)]">
+					<img src="avatar.svg" alt="Logo de Construproyectos VM" />
 				</div>
 			</div>
 			<div class="text-center relative inset-0 flex items-center justify-center">
-				<span class=" text-black text-md-mono my-4 px-3 py- w-auto  items-center justify-center cursor-crosshair z-10  border var(--bgcolor-qreativo) rounded-full">
+				<span class=" text-black text-sm-mono my-4 px-3 py- w-auto  items-center justify-center cursor-crosshair z-10  border var(--bgcolor-qreativo) rounded-full">
 					@construproyectosvm
 				</span>
 			</div>
@@ -93,15 +104,15 @@ const mensajes = {
 
 			<section class="relative inset-0 my-5 flex flex-col  items-center justify-center text-center">
 				<!-- <img src="/logo.svg" alt="Logo" class="w-28 mb-4" /> -->
-				<h1 class="text-2xl font-bold">CONSTRUPROYECTOS VM</h1>
+				<h1 class="font-title text-2xl font-bold">CONSTRUPROYECTOS VM</h1>
 				<p class="text-gray-600">Te acompañamos a construir tus sueños</p>
 			</section>
 
 			<section class="flex gap-3  mt-4 justify-center">
 				<!-- Whatsapp -->
 				<a id="icon-whatsapp-link" class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-100" aria-label="Whatsapp" title="Ir a Whatsapp de @construproyectosvm">
-					<svg >
-					<use xlink:href="img/svg/iconos/instagram.svg" />
+					<svg width="28" height="28">
+					<use xlink:href="img/svg/iconos/whatsapp_dos.svg" />
 					</svg>
 				</a>
 
@@ -117,7 +128,7 @@ const mensajes = {
 				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.facebook.com/share/1B3BdGAxFw/?mibextid=wwXIfr"
 					target="_blank" aria-label="Facebook" title="Ir a Facebook de @Contruproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="img/svg/iconos/instagram.svg" />
+					<use xlink:href="img/svg/iconos/facebook.svg" />
 					</svg>
 				</a>		
 				
@@ -125,7 +136,7 @@ const mensajes = {
 				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.tiktok.com/@construproyectosvm?_t=ZS-8yzpW8r6I8l&_r=1"
 					target="_blank" aria-label="Tik Tok" title="Ir a Tik Tok de @contruproyectosvm">
 					<svg width="28" height="28">
-					<use xlink:href="img/svg/iconos/instagram.svg" />
+					<use xlink:href="img/svg/iconos/Tiktok_tres.svg" />
 					</svg>
 				</a>	
 			</section>
@@ -141,7 +152,7 @@ const mensajes = {
 					</div>
 
 					<div  class="item-group">
-						<a id="url-mapa" href="" target="_blank"   class="enlace-item"  title="Ir a Google Maps de @construproyectosvm">Visitanos aquí</a>
+						<a id="url-mapa" href="" target="_blank"   class="enlace-item"  title="Ir a Google Maps de @construproyectosvm">Visítanos aquí</a>
 					</div>
 				</div>
 			</section>	
@@ -157,10 +168,10 @@ const mensajes = {
 			const telefono = "573053012530";
 			const urlmap = `https://www.google.com/maps/place/construproyectosvm/@3.4639172,-76.5316519,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a754b41e10fd:0x4afb32685d4c7c0f!8m2!3d3.4639172!4d-76.5316519!16s%2Fg%2F11xsn611pr?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D`;
 			const mensajes = {
-				facebook: "Hola vi esto en Facebook y quiero información",
-				instagram: "Hola vi esto en Instagram y quiero información",
-				tiktok: "Hola vi esto en TikTok y quiero información",
-				default: "Hola, quiero información"
+				facebook: "Hola, vi una publicación en Facebook y me gustaría recibir más información, por favor.",
+				instagram: "Hola, encontré su contenido en Instagram y quiero saber más detalles.",
+				tiktok: "Hola, vi un video en TikTok y estoy interesad@ en la información.",
+				default: "Hola, estoy interesad@ en la información"
 			};
 
 			const ref = document.referrer.toLowerCase();
