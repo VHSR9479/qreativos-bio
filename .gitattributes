@@ -1,0 +1,21 @@
+# Normalizar todos los archivos de texto a LF
+* text=auto eol=lf
+
+# Archivos binarios (no tocar)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.webp binary
+
+# Archivos de código
+*.js text eol=lf
+*.ts text eol=lf
+*.mts text eol=lf
+*.astro text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
