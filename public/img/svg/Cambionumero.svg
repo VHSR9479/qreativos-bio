@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 987.38 1403.57">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 50px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        font-family: MontserratRoman-Regular, Montserrat;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-5 {
+        font-size: 76.19px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: BankGothicBT-Medium, 'BankGothic Md BT';
+        font-weight: 500;
+      }
+
+      .cls-5, .cls-7 {
+        fill: #fcfcf7;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-11 {
+        fill: #293277;
+      }
+
+      .cls-9 {
+        opacity: .5;
+        stroke-width: .47px;
+      }
+
+      .cls-9, .cls-10, .cls-11 {
+        stroke: #312782;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-12 {
+        fill: #18223c;
+      }
+
+      .cls-13, .cls-14 {
+        font-family: MontserratRoman-Bold, Montserrat;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-14 {
+        font-size: 51.89px;
+      }
+
+      .cls-15 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        font-size: 105.79px;
+      }
+
+      .cls-6, .cls-16 {
+        fill: #d9d9d9;
+      }
+
+      .cls-17 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-10 {
+        stroke-width: .56px;
+      }
+
+      .cls-18 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-11 {
+        filter: url(#drop-shadow-1);
+        stroke-width: 3.6px;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="196.48" y="0" width="623" height="212" filterUnits="userSpaceOnUse">
+      <feOffset dx="19" dy="17"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Capa_2-2" data-name="Capa 2">
+    <path class="cls-7" d="M141.76,49.84h704.34c55.72,0,100.96,45.24,100.96,100.96v1151.81c0,55.72-45.24,100.96-100.96,100.96H141.76c-55.72,0-100.96-45.24-100.96-100.96V150.8c0-55.72,45.24-100.96,100.96-100.96Z"/>
+    <rect class="cls-11" x="209.85" y="15.52" width="558.78" height="146.74"/>
+    <text class="cls-5" transform="translate(235.67 80.84)"><tspan x="0" y="0">Comuni</tspan><tspan class="cls-18" x="302.84" y="0">c</tspan><tspan x="350.58" y="0">ado</tspan></text>
+    <text class="cls-5" transform="translate(259.67 134.36)"><tspan x="0" y="0">impo</tspan><tspan class="cls-15" x="182.93" y="0">r</tspan><tspan class="cls-17" x="229.74" y="0">t</tspan><tspan x="269.14" y="0">ante</tspan></text>
+    <text class="cls-2" transform="translate(184.65 244.2)"><tspan class="cls-4"><tspan x="0" y="0">En construproyectos VM </tspan></tspan><tspan class="cls-4" x="-119.55" y="60">tenemos </tspan><tspan class="cls-13" x="116.85" y="60">nueva linea de contacto</tspan></text>
+    <text class="cls-1" transform="translate(200.33 387.6)"><tspan x="0" y="0">Nuestro nuevo número</tspan></text>
+    <rect class="cls-12" y="433.91" width="987.38" height="165.76" rx="30.41" ry="30.41"/>
+    <text class="cls-6" transform="translate(26.81 542.1)"><tspan x="0" y="0">305 301 25 30</tspan></text>
+    <text class="cls-14" transform="translate(262.1 684.53)"><tspan x="0" y="0">Disponible para:</tspan></text>
+    <text class="cls-3" transform="translate(188.05 780.84)"><tspan x="0" y="0">Cotizaciones</tspan></text>
+    <text class="cls-3" transform="translate(193.94 841)"><tspan x="0" y="0">Asesoría en construcción</tspan></text>
+    <text class="cls-3" transform="translate(193.94 899.17)"><tspan x="0" y="0">Remodelaciones</tspan></text>
+    <g>
+      <path class="cls-9" d="M174.19,765.68c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
+      <path class="cls-12" d="M159.09,777.48l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
+    </g>
+    <g>
+      <path class="cls-9" d="M173.14,823.71c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
+      <path class="cls-12" d="M158.04,835.51l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
+    </g>
+    <g>
+      <path class="cls-9" d="M173.14,882.74c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
+      <path class="cls-12" d="M158.04,894.54l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
+    </g>
+    <text class="cls-3" transform="translate(225.4 1019.16)"><tspan x="0" y="0">¡Estamos listos para </tspan><tspan x="88.08" y="62.26">acompañarte</tspan><tspan x="67.22" y="124.53">en tu proyecto!</tspan></text>
+    <g>
+      <polygon class="cls-8" points="437.39 1243.77 489.87 1267.21 538.94 1243.17 524.52 1236.16 489.67 1251.18 454.62 1236.56 437.39 1243.77"/>
+      <polygon class="cls-12" points="489.87 1267.21 489.67 1251.18 524.52 1236.16 538.94 1243.17 489.87 1267.21"/>
+      <polygon class="cls-12" points="489.18 1368.23 489.78 1278.4 549.87 1248.36 549.56 1328.27 533.99 1338.56 533.24 1293.79 511.05 1304.69 511.15 1353.43 489.18 1368.23"/>
+      <polygon class="cls-10" points="428.61 1328.41 428.91 1248.76 489.67 1278.7 489.07 1368.23 469.42 1355.36 469.61 1305.47 446.75 1293.97 445.84 1339.79 428.61 1328.41"/>
+      <polygon class="cls-12" points="489.18 1368.55 489.78 1278.48 549.87 1248.36 549.56 1328.49 533.99 1338.8 533.24 1293.92 511.3 1306.02 511.32 1355.15 489.18 1368.55"/>
+      <polygon class="cls-16" points="445.84 1340.31 455.22 1331.32 455.32 1298.6 446.81 1294.35 445.84 1340.31"/>
+      <polyline class="cls-16" points="533.99 1338.8 525.12 1330.6 525.02 1298.35 533.24 1293.92"/>
+    </g>
+  </g>
+</svg>

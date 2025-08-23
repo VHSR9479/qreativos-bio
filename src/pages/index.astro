@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import { checkSocialReferrer } from "../script/checkSocialReferrer.js";
 
 const mensajes = {
   facebook: "Hola vi esto en Facebook y quiero información",
@@ -8,6 +7,7 @@ const mensajes = {
   tiktok: "Hola vi esto en TikTok y quiero información",
   default: "Hola, quiero información"
 };
+const { title = "Soy un Modal 🚀", content = "Aquí va tu contenido." } = Astro.props;
 ---
 
 <html lang="es">
@@ -127,19 +127,19 @@ const mensajes = {
 				</a>
 
 				<!-- Instagram -->
-				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-200 "
-					href="https://www.instagram.com/construproyectosvm?igsh=aTEzZWI5OG82OWMw" target="_blank" aria-label="Instagram" title="Ir a Instagram de @construproyectosvm">
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-200 "href="https://www.instagram.com/construproyectosvm" 
+					target="_blank" aria-label="Instagram" title="Ir a Instagram de @construproyectosvm">
 					<img src="img/svg/iconos/instagram.svg" alt="Instagram" width="28" height="28"/>
 				</a>
 
 				<!-- Facebook -->
-				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.facebook.com/share/1B3BdGAxFw/?mibextid=wwXIfr"
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.facebook.com/construproyectosvm"
 					target="_blank" aria-label="Facebook" title="Ir a Facebook de @Contruproyectosvm">
 					<img src="img/svg/iconos/facebook.svg" alt="Facebook" width="28" height="28"/>
 				</a>
 
 				<!-- Tik Tok -->
-				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.tiktok.com/@construproyectosvm?_t=ZS-8yzpW8r6I8l&_r=1"
+				<a class="bg-[var(--bgcolor-gris)] social-button animate-slide-up-fade animate-delay-300" href="https://www.tiktok.com/@construproyectosvm"
 					target="_blank" aria-label="Tik Tok" title="Ir a Tik Tok de @contruproyectosvm">
 					<img width="28" height="28" src="img/svg/iconos/Tiktok_tres.svg" alt="Tik Tok" />
 				</a>
@@ -166,6 +166,14 @@ const mensajes = {
 					<p class="text-sm font-bold text-[var(--bgcolor-gris)]">Diseño y desarrollo por <a href="https://qreativostudio.com" target="_blank" class="hover:underline">Qreativo Studio</a>.</p>
 				</div>
 			</footer>
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span id="closeModal" class="close">✖</span>
+					<div class=" w-full h-full ">
+						<img src="img/svg/modalInfo.svg" width="100%" height="100%" alt="información Link WhatsApp" />
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script>
@@ -178,30 +186,67 @@ const mensajes = {
 				default: "Hola, estoy interesad@ en la información"
 			};
 
-			const ref = document.referrer.toLowerCase();
+			const params = new URLSearchParams(window.location.search);
+			const source = params.get("utm_source")?.toLowerCase();
 			let mensaje = mensajes.default;
-
-			if (ref.includes("facebook.com")) {
+			let is_tiktok = false;
+			if (source === "facebook") {
 				mensaje = mensajes.facebook;
-			} else if (ref.includes("instagram.com")) {
+			} else if (source === "instagram") {
 				mensaje = mensajes.instagram;
-			} else if (ref.includes("tiktok.com")) {
+			} else if (source === "tiktok") {
 				mensaje = mensajes.tiktok;
+				is_tiktok = true;
 			}
 
 			const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 			const whatsappLink = document.getElementById("icon-whatsapp-link");
-			if (whatsappLink) {
-				whatsappLink.setAttribute("href", urlWhatsapp);
-			}
 			const whatsappLink2 = document.getElementById("url-whatsapp");
-			if (whatsappLink2) {
-				whatsappLink2.setAttribute("href", urlWhatsapp);
+			if(!is_tiktok){
+				if (whatsappLink) {
+					whatsappLink.setAttribute("href", urlWhatsapp);
+				}
+				
+				if (whatsappLink2) {
+					whatsappLink2.setAttribute("href", urlWhatsapp);
+				}
+				const mapsLink = document.getElementById("url-mapa");
+				if (mapsLink) {
+					mapsLink.setAttribute("href", urlmap);
+				}
+			}else {
+				const modal = document.getElementById("modal");
+				const openBtn = document.getElementById("openModal");
+				const closeBtn = document.getElementById("closeModal");
+
+				if(modal){
+					if(whatsappLink) {
+						whatsappLink.addEventListener("click", (e) => {
+							e.preventDefault(); 
+							modal.classList.add("active");
+						});
+
+					}
+					if(whatsappLink2) {
+						whatsappLink2.addEventListener("click", (e) => {
+							e.preventDefault();
+							modal.classList.add("active");
+						});
+					}
+					if(closeBtn) {	
+  						closeBtn.addEventListener("click", () => modal.classList.remove("active"));
+					}
+					modal.addEventListener("click", (e) => {
+						if (e.target === modal) {
+						modal.classList.remove("active");
+						}
+					});
+				}
 			}
-			const mapsLink = document.getElementById("url-mapa");
-			if (mapsLink) {
-				mapsLink.setAttribute("href", urlmap);
-			}
+
+
+
+					
 			</script>
   	</body>
 </html>
