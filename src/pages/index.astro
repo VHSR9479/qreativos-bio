@@ -178,7 +178,7 @@ const { title = "Soy un Modal 🚀", content = "Aquí va tu contenido." } = Astr
 
 		<script>
 			const telefono = "573053012530";
-			const urlmap = `https://www.google.com/maps/place/construproyectosvm/@3.4639172,-76.5316519,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a754b41e10fd:0x4afb32685d4c7c0f!8m2!3d3.4639172!4d-76.5316519!16s%2Fg%2F11xsn611pr?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D`;
+			const urlmap = `https://www.google.com/maps/place/Edificio+Centro+Granada/@3.464001,-76.5306471,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a614b02e5865:0x55f0260eefa68ae6!8m2!3d3.464001!4d-76.5306471!16s%2Fg%2F11b7q87y52?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D`;
 			const mensajes = {
 				facebook: "Hola, vi una publicación en Facebook y me gustaría recibir más información, por favor.",
 				instagram: "Hola, encontré su contenido en Instagram y quiero saber más detalles.",
@@ -199,9 +199,14 @@ const { title = "Soy un Modal 🚀", content = "Aquí va tu contenido." } = Astr
 				is_tiktok = true;
 			}
 
+			const mapsLink = document.getElementById("url-mapa");
+			if (mapsLink) {
+				mapsLink.setAttribute("href", urlmap);
+			}
 			const urlWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 			const whatsappLink = document.getElementById("icon-whatsapp-link");
 			const whatsappLink2 = document.getElementById("url-whatsapp");
+
 			if(!is_tiktok){
 				if (whatsappLink) {
 					whatsappLink.setAttribute("href", urlWhatsapp);
@@ -210,10 +215,7 @@ const { title = "Soy un Modal 🚀", content = "Aquí va tu contenido." } = Astr
 				if (whatsappLink2) {
 					whatsappLink2.setAttribute("href", urlWhatsapp);
 				}
-				const mapsLink = document.getElementById("url-mapa");
-				if (mapsLink) {
-					mapsLink.setAttribute("href", urlmap);
-				}
+
 			}else {
 				const modal = document.getElementById("modal");
 				const openBtn = document.getElementById("openModal");
