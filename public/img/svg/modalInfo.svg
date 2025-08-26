@@ -1,128 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 987.38 1403.57">
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 987.38 1120.27">
   <defs>
     <style>
-      .cls-1, .cls-2 {
-        font-size: 50px;
-      }
-
-      .cls-1, .cls-3, .cls-4 {
-        font-family: MontserratRoman-Regular, Montserrat;
-        font-variation-settings: 'wght' 400;
-      }
-
-      .cls-5 {
-        font-size: 76.19px;
-      }
-
-      .cls-5, .cls-6 {
-        font-family: BankGothicBT-Medium, 'BankGothic Md BT';
-        font-weight: 500;
-      }
-
-      .cls-5, .cls-7 {
-        fill: #fcfcf7;
-      }
-
-      .cls-8, .cls-9, .cls-10, .cls-11 {
+      .cls-1, .cls-2, .cls-3 {
         fill: #293277;
       }
 
-      .cls-9 {
-        opacity: .5;
-        stroke-width: .47px;
+      .cls-4 {
+        fill: #18223c;
       }
 
-      .cls-9, .cls-10, .cls-11 {
+      .cls-2 {
+        filter: url(#drop-shadow-1);
+        stroke-width: 3.91px;
+      }
+
+      .cls-2, .cls-3 {
         stroke: #312782;
         stroke-miterlimit: 10;
       }
 
-      .cls-12 {
-        fill: #18223c;
-      }
-
-      .cls-13, .cls-14 {
+      .cls-5, .cls-6, .cls-7 {
         font-family: MontserratRoman-Bold, Montserrat;
         font-variation-settings: 'wght' 700;
         font-weight: 700;
       }
 
-      .cls-3, .cls-14 {
-        font-size: 51.89px;
-      }
-
-      .cls-15 {
-        letter-spacing: -.04em;
-      }
-
       .cls-6 {
-        font-size: 105.79px;
+        font-size: 126px;
+        letter-spacing: .04em;
       }
 
-      .cls-6, .cls-16 {
+      .cls-6, .cls-8 {
         fill: #d9d9d9;
       }
 
-      .cls-17 {
-        letter-spacing: -.07em;
+      .cls-9, .cls-10 {
+        font-family: MontserratRoman-Regular, Montserrat;
+        font-variation-settings: 'wght' 400;
       }
 
-      .cls-10 {
-        stroke-width: .56px;
+      .cls-9, .cls-11 {
+        font-size: 57.59px;
       }
 
-      .cls-18 {
-        letter-spacing: -.02em;
+      .cls-3 {
+        stroke-width: .53px;
       }
 
-      .cls-11 {
-        filter: url(#drop-shadow-1);
-        stroke-width: 3.6px;
+      .cls-7 {
+        font-size: 76.19px;
+      }
+
+      .cls-7, .cls-12 {
+        fill: #fcfcf7;
       }
     </style>
-    <filter id="drop-shadow-1" x="196.48" y="0" width="623" height="212" filterUnits="userSpaceOnUse">
-      <feOffset dx="19" dy="17"/>
-      <feGaussianBlur result="blur" stdDeviation="10"/>
+    <filter id="drop-shadow-1" x="196.94" y="0" width="628" height="243" filterUnits="userSpaceOnUse">
+      <feOffset dx="20.61" dy="18.44"/>
+      <feGaussianBlur result="blur" stdDeviation="10.85"/>
       <feFlood flood-color="#000" flood-opacity=".2"/>
       <feComposite in2="blur" operator="in"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
   <g id="Capa_2-2" data-name="Capa 2">
-    <path class="cls-7" d="M141.76,49.84h704.34c55.72,0,100.96,45.24,100.96,100.96v1151.81c0,55.72-45.24,100.96-100.96,100.96H141.76c-55.72,0-100.96-45.24-100.96-100.96V150.8c0-55.72,45.24-100.96,100.96-100.96Z"/>
-    <rect class="cls-11" x="209.85" y="15.52" width="558.78" height="154.74"/>
-    <text class="cls-5" transform="translate(230.67 80.84)"><tspan x="0" y="0">Sabemos que </tspan></text>
-    <text class="cls-5" transform="translate(230.67 154.36)"><tspan x="0" y="0">vienes de TikTok.</tspan></text>
-    <text class="cls-2" transform="translate(184.65 244.2)"><tspan class="cls-4"><tspan x="0" y="0">El navegador de TikTok   </tspan></tspan><tspan class="cls-4" x="-119.55" y="60">no nos permite abrir este enlace. </tspan></text>
-    <text class="cls-1" transform="translate(184.65 387.6)"><tspan x="-119.55" y="0"> Comunicate a nuestro número:</tspan></text>
-    <rect class="cls-12" y="433.91" width="987.38" height="165.76" rx="30.41" ry="30.41"/>
-    <text class="cls-6" transform="translate(202.1 542.1)"><tspan x="0" y="0">305 301 25 30</tspan></text>
-    <text class="cls-14" transform="translate(262.1 684.53)"><tspan x="0" y="0">Disponible para:</tspan></text>
-    <text class="cls-3" transform="translate(188.05 780.84)"><tspan x="0" y="0">Cotizaciones</tspan></text>
-    <text class="cls-3" transform="translate(193.94 841)"><tspan x="0" y="0">Asesoría en construcción</tspan></text>
-    <text class="cls-3" transform="translate(193.94 899.17)"><tspan x="0" y="0">Remodelaciones</tspan></text>
+    <path class="cls-12" d="M143.18,100h704.34c55.72,0,100.96,45.24,100.96,100.96v818.36c0,55.72-45.24,100.96-100.96,100.96H143.18c-55.72,0-100.96-45.24-100.96-100.96V200.96c0-55.72,45.24-100.96,100.96-100.96Z"/>
+    <rect class="cls-2" x="210.85" y="16.8" width="558.78" height="172.59"/>
+    <text class="cls-7" transform="translate(236.67 93.38)"><tspan x="0" y="0">Comunicado</tspan></text>
+    <text class="cls-7" transform="translate(261.67 161.89)"><tspan x="0" y="0">importante</tspan></text>
+    <text class="cls-9" transform="translate(154.28 267.23)"><tspan x="0" y="0">El navegador de TikTok </tspan><tspan x="-69.85" y="69.1">no permite abrir este enlace.</tspan></text>
+    <text class="cls-9" transform="translate(117.85 421.28)"><tspan x="0" y="0">Comunícate con nosotros </tspan><tspan x="224.73" y="69.1">al número.</tspan></text>
+    <text class="cls-11" transform="translate(173.95 774.15)"><tspan class="cls-10"><tspan x="0" y="0" xml:space="preserve"> o déjanos tu contacto </tspan></tspan><tspan class="cls-10" x="-10.48" y="69.1">en el buzón y </tspan><tspan class="cls-5" x="387.26" y="69.1">nosotros </tspan><tspan class="cls-5"><tspan x="84.42" y="138.21">te contactamos.</tspan></tspan></text>
+    <rect class="cls-4" y="528.45" width="987.38" height="165.76" rx="30.41" ry="30.41"/>
+    <text class="cls-6" transform="translate(33.81 656.63)"><tspan x="0" y="0">305 301 25 30</tspan></text>
     <g>
-      <path class="cls-9" d="M174.19,765.68c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
-      <path class="cls-12" d="M159.09,777.48l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
-    </g>
-    <g>
-      <path class="cls-9" d="M173.14,823.71c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
-      <path class="cls-12" d="M158.04,835.51l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
-    </g>
-    <g>
-      <path class="cls-9" d="M173.14,882.74c0,8.43-6.84,15.27-15.27,15.27s-15.27-6.84-15.27-15.27,6.84-15.27,15.27-15.27,15.27,6.84,15.27,15.27h0Z"/>
-      <path class="cls-12" d="M158.04,894.54l-.19-.33c-2.96-5.04-10.82-15.74-10.9-15.84l-.11-.15,2.68-2.65,8.48,5.92c5.34-6.93,10.32-11.69,13.57-14.46,3.55-3.04,5.87-4.44,5.89-4.45l.05-.03h4.54l-.43.39c-11.16,9.94-23.26,31.07-23.38,31.28l-.19.33Z"/>
-    </g>
-    <text class="cls-3" transform="translate(225.4 1019.16)"><tspan x="0" y="0">¡Estamos listos para </tspan><tspan x="88.08" y="62.26">acompañarte</tspan><tspan x="67.22" y="124.53">en tu proyecto!</tspan></text>
-    <g>
-      <polygon class="cls-8" points="437.39 1243.77 489.87 1267.21 538.94 1243.17 524.52 1236.16 489.67 1251.18 454.62 1236.56 437.39 1243.77"/>
-      <polygon class="cls-12" points="489.87 1267.21 489.67 1251.18 524.52 1236.16 538.94 1243.17 489.87 1267.21"/>
-      <polygon class="cls-12" points="489.18 1368.23 489.78 1278.4 549.87 1248.36 549.56 1328.27 533.99 1338.56 533.24 1293.79 511.05 1304.69 511.15 1353.43 489.18 1368.23"/>
-      <polygon class="cls-10" points="428.61 1328.41 428.91 1248.76 489.67 1278.7 489.07 1368.23 469.42 1355.36 469.61 1305.47 446.75 1293.97 445.84 1339.79 428.61 1328.41"/>
-      <polygon class="cls-12" points="489.18 1368.55 489.78 1278.48 549.87 1248.36 549.56 1328.49 533.99 1338.8 533.24 1293.92 511.3 1306.02 511.32 1355.15 489.18 1368.55"/>
-      <polygon class="cls-16" points="445.84 1340.31 455.22 1331.32 455.32 1298.6 446.81 1294.35 445.84 1340.31"/>
-      <polyline class="cls-16" points="533.99 1338.8 525.12 1330.6 525.02 1298.35 533.24 1293.92"/>
+      <polygon class="cls-1" points="435.94 971.03 488.41 992.11 537.49 970.49 523.06 964.19 488.21 977.7 453.16 964.55 435.94 971.03"/>
+      <polygon class="cls-4" points="488.41 992.11 488.21 977.7 523.06 964.19 537.49 970.49 488.41 992.11"/>
+      <polygon class="cls-4" points="487.72 1082.98 488.32 1002.18 548.41 975.16 548.11 1047.04 532.53 1056.3 531.78 1016.03 509.59 1025.83 509.69 1069.67 487.72 1082.98"/>
+      <polygon class="cls-3" points="427.15 1047.16 427.45 975.52 488.21 1002.45 487.61 1082.98 467.96 1071.4 468.16 1026.53 445.29 1016.19 444.38 1057.4 427.15 1047.16"/>
+      <polygon class="cls-4" points="487.72 1083.27 488.32 1002.25 548.41 975.16 548.11 1047.24 532.53 1056.51 531.78 1016.14 509.85 1027.02 509.86 1071.21 487.72 1083.27"/>
+      <polygon class="cls-8" points="444.38 1057.87 453.76 1049.79 453.86 1020.35 445.35 1016.52 444.38 1057.87"/>
+      <polyline class="cls-8" points="532.53 1056.51 523.67 1049.13 523.57 1020.13 531.78 1016.14"/>
     </g>
   </g>
 </svg>
