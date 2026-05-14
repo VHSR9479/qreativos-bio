@@ -207,13 +207,13 @@ const { title = "Soy un Modal 🚀", content = "Aquí va tu contenido." } = Astr
 		</div>
 
 		<script>
-			const telefono = "573053012530";
-			const urlmap = `https://www.google.com/maps/place/Edificio+Centro+Granada/@3.464001,-76.5306471,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a614b02e5865:0x55f0260eefa68ae6!8m2!3d3.464001!4d-76.5306471!16s%2Fg%2F11b7q87y52?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D`;
+			const telefono = import.meta.env.VITE_TELEFONO || "573053012530";
+			const urlmap = import.meta.env.VITE_URL_GOOGLE || "https://maps.app.goo.gl/csUsiT5X65uYxcH39";	
 			const mensajes = {
-				facebook: "Hola, vi una publicación en Facebook y me gustaría recibir más información, por favor.",
-				instagram: "Hola, encontré su contenido en Instagram y quiero saber más detalles.",
-				tiktok: "Hola, vi un video en TikTok y estoy interesad@ en la información.",
-				default: "Hola, estoy interesad@ en la información"
+				facebook: import.meta.env.VITE_TEXT_FACEBOOK || "Hola, vi una publicación en Facebook y me gustaría recibir más información, por favor.",
+				instagram: import.meta.env.VITE_TEXT_INSTAGRAM || "Hola, encontré su contenido en Instagram y quiero saber más detalles.",
+				tiktok: import.meta.env.VITE_TEXT_TIKTOK || "Hola, vi un video en TikTok y estoy interesad@ en la información.",
+				default: import.meta.env.VITE_TEXT_DEFAULT || "Hola, estoy interesad@ en la información"
 			};
 
 			const params = new URLSearchParams(window.location.search);
